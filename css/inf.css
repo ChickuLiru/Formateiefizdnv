@@ -1,0 +1,15 @@
+html,body{
+    background-image: url('../images/lion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+.info{
+    font: arial;
+    color: white;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 90px;
+}

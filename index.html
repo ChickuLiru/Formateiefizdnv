@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatei e fiz dnv</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ROAR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="inf.html">Informações<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+        <form class="process">
+          <label class="lbl">Nome:</label>
+          <input class="inpt" id="nome" type="text" placeholder="Insira o nome" required>
+          <label class="lbl">Valor de horas:</label>
+          <input type="number" id="hrs" class="inpt" placeholder="Insira o valor das horas trabalhadas" required>
+          <label class="lbl">Quantidade de horas:</label>
+          <input type="number" id="hrsp" class="inpt" placeholder="Insira a quantidade de horas trabalhadas" required>
+          <label class="lbl">Imposto de renda:</label>
+          <input type="number" class="inpt" placeholder="Insira o valor do imposto de renda" requid>
+          <input type="number" id="result1" class="inpt-result" placeholder="Salário bruto" readonly>
+          <input type="number" id="result2" class="inpt-result" placeholder="Salário líquido" readonly>
+          <button type="reset" class="button btn1">Limpar</button>
+          <button type="button" class="button btn2" onclick="salvar()">Calcular S. bruto</button>
+          <button type="button" class="button btn3" onclick="salvarb()">Calcular I. renda</button>
+        </form>
+</body>
+</html>
